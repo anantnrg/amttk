@@ -42,7 +42,12 @@
     }
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "canvas-gauges": "^2.1.7",
+    "electron-reload": "^2.0.0-alpha.1",
+    "electron-squirrel-startup": "^1.0.0",
+    "jquery": "^3.6.0",
+    "jquey": "^0.0.1-security",
+    "svg-gauge": "^1.0.7"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.64",

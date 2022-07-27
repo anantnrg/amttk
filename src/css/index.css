@@ -1,0 +1,142 @@
+@font-face {
+  font-family: Coda;
+  src: url(../fonts/Coda.ttf);
+}
+
+@font-face {
+  font-family: Quantum;
+  src: url(../fonts/Quantum.otf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Coda', sans-serif;
+}
+
+body{
+   background-color: #282a36;
+}
+
+.main{
+  display: grid;
+  position: relative;
+}
+
+/* SIDE BAR STUFF */
+.main .sidebar{
+  width: 80px;
+  height: 100%;
+  background: #44475a;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.main .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.main .sidebar ul li a{
+  color: #937DC2;
+  display: block;
+  font-size: 22px;
+  margin-left: 15px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-right: 10px;
+}
+
+.main .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.main .sidebar ul li:hover{
+  background-color: #bd93f9;
+}
+    
+.main .sidebar ul li:hover a{
+  color: #fff;
+}
+
+/* MAIN STUFF */
+h1 {
+  font-size: 88px;
+  font-family: Quantum;
+  text-align: center;
+  padding-left: 5rem;
+  padding-top: 20rem;
+  color: #f8f8f2;
+}
+ 
+h3 {
+  font-size: 32px;
+  font-family: Coda;
+  text-align: center;
+  padding-left: 5rem;
+  padding-top: 1rem;
+  color: #f8f8f2;
+}
+
+/* .btn-rp {
+  text-decoration: none;
+  margin-left: 40rem;
+  margin-top: 10rem;
+  width: 2.25rem;
+  height: 5rem;
+  font-size: 14px;
+  position: relative;
+  background: #44475a;
+  color: #f8f8f2;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #bdb8d7; 
+  color: #594f8d;
+} */
+
+.btn{
+  font-family: Coda;
+  font-size: 18px;
+  text-align: center;
+  color: #f8f8f2;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  background-color: #44475a;
+  /* border-style: solid;
+  border-radius: 40px;
+  border-color: #937DC2;
+  border-width: 1px; */
+
+  /* background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; */
+  
+}
+
+.btn-rp {
+  left: 35rem;
+  top: 2.5rem;
+  width: 300px;
+  height: 200px;
+}
+
+.btn-usb {
+
+}
+
