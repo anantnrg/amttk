@@ -23,26 +23,39 @@
             </ul> 
     </div>
     <div class="main-content">
-        <div class="info-bars">
-            <li>
-                <h3>CPU</h3>
-                <span class="bar"><span class="cpu-bar" id="cpu-bar"></span></span>
-            </li>
+        <h3>System Information</h3>
+        <!-- Usage Bars -->
+        <span class="cpu_text">CPU</span>
+        <div class="cpu_usage">            
+            <div class="cpu_usage_fill"></div>
+        </div>
 
-            <li>
-                <h3>RAM</h3>
-                <span class="bar"><span class="ram-bar" id="ram-bar"></span></span>
-            </li>
+        <span class="ram_text">RAM</span>
+        <div class="ram_usage">            
+            <div class="ram_usage_fill"></div>
+        </div>
 
-            <li>
-                <h3>GPU</h3>
-                <span class="bar"><span class="gpu-bar" id="gpu-bar"></span></span>
-            </li>
+        <span class="gpu_text">GPU</span>
+        <div class="gpu_usage">            
+            <div class="gpu_usage_fill"></div>
+        </div>
 
-            <li>
-                <h3>Disk</h3>
-                <span class="bar"><span class="disk-bar" id="disk-bar"></span></span>
-            </li>
+        <span class="disk_text">DISK</span>
+        <div class="disk_usage">            
+            <div class="disk_usage_fill"></div>
+        </div>
+
+        <!-- System Specifications -->
+        <div class="specs">
+            <h3>System Specifications</h3>
+            <h5>CPU</h5>
+            <p class="info" id="cpu_name">CPU : </p>
+            <p class="info" id="cpu_speed">Speed :</p>
+            <p class="info" id="cpu_cores">Cores : </p>
+            <p></p>
+
+            <!-- <h5>RAM</h5>
+            <h5>GPU</h5> -->
         </div>
         <script src="js/dashboard.js"></script>
     </div>  

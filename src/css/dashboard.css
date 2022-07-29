@@ -35,6 +35,7 @@ body {
   
   /* SIDE BAR STUFF */
   .main .sidebar{
+    z-index: 200;
     width: 80px;
     height: 100%;
     background: #44475a;
@@ -117,72 +118,141 @@ body {
     margin: 0;
   }
 
-  h1 {
-    text-align: center;
-
-  }
-
   h3 {
-    margin-top: 5px;
-    margin-bottom: 10px;
+    font-size: 42px;
+    font-family: Coda;
     text-align: center;
-    font-size: 25px;
-  
   }
 
-  .info-bars {
-    width: 1250px;
-    margin-top: 50px;
-    margin-left: 10rem;
-    color: #f8f8f2;
-    padding: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25 ), 0 10px 10px rgba(0, 0, 0, 0.22 );
-
-  }
-
-  .info-bars li {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 0px 0px;
-    
-  }
-
-  .bar {
+  .cpu_usage {
+    position: relative;
+    text-align: center;
+    margin-left: 8rem;
+    margin-top: 0.4rem;
+    width: 1300px;
+    height: 30px;
     background: #44475a;
-    display: block;
-    height: 30px;
-    border: 1px solid rgba(0,0,0,0.03);
-    border-radius: 20px;
+    border-radius: 30px;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25 ), 0 1px 2px rgba(0, 0, 0, 0.24 );
-    transition: all 0.3s cubic-bezier(0.25, .8, .25, 1);
+  }
+  
+  .cpu_usage_fill {
+    width: 0%;
+    height: 100%;
+    background: #1a76d2;
+    transition: all 0.2s;
   }
 
-  .bar:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25 ), 0 10px 10px rgba(0, 0, 0, 0.22 );
+  .cpu_text {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: #f8f8f2;
+    margin-top: 30px;
   }
 
-  .bar span {
+
+  .ram_usage {
+    position: relative;
+    text-align: center;
+    margin-left: 8rem;
+    margin-top: 0.4rem;
+    width: 1300px;
     height: 30px;
-    float: left;
-    background: linear-gradient(to right, rgba(80, 250, 123, 1.0) 0%, rgba(241, 250, 141, 1.0)40%, rgba(255, 85, 85, 1.0)70%);
+    background: #44475a;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .ram_usage_fill {
+    width: 0%;
+    height: 100%;
+    background: #a244bd;
+    transition: all 0.2s;
   }
 
-  .cpu-bar {
-    width: var(--cpu-width);
-    animation: cpu-bar 1s;
-  }
-  .ram-bar {
-    width: var(--ram-width);
-    animation: ram-bar 1s;
-  }
-  .gpu-bar {
-    width: var(--gpu-width);
-    animation: gpu-bar 1s;
-  }
-  .disk-bar {
-    width: var(--disk-width);
-    animation: disk-bar 1s;
+  .ram_text {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: #f8f8f2;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
 
- 
+
+  .gpu_usage {
+    position: relative;
+    text-align: center;
+    margin-left: 8rem;
+    margin-top: 0.4rem;
+    width: 1300px;
+    height: 30px;
+    background: #44475a;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .gpu_usage_fill {
+    width: 0%;
+    height: 100%;
+    background: #c64d45 ;
+    transition: all 0.2s;
+  }
+
+  .gpu_text {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: #f8f8f2;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+
+  .disk_usage {
+    position: relative;
+    text-align: center;
+    margin-left: 8rem;
+    margin-top: 0.4rem;
+    width: 1300px;
+    height: 30px;
+    background: #44475a;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .disk_usage_fill {
+    width: 0%;
+    height: 100%;
+    background: #50fa7b;
+    transition: all 0.2s;
+  }
+
+  .disk_text {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: #f8f8f2;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .specs {
+
+  }
+
+  h5 {
+    font-size: 36px;
+    color: #f8f8f2;
+    text-align: left;
+    margin-left: 400px;
+    margin-top: 20px;
+  }
+  .info {
+    font-size: 24px;
+    color: #f8f8f2;
+    margin-left: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
